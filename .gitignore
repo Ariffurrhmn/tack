@@ -1,0 +1,22 @@
+# Rust build output
+target/
+
+# Cargo.lock is intentionally tracked (this is an application, not a library)
+
+# User data
+*.db
+*.sqlite
+
+# Secrets
+.env
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
