@@ -1,8 +1,10 @@
 <div align="center">
 
-# 📌 Tack
+<img src="assets/banner/banner.svg" alt="Tack: sticky notes that stay where you stick them" width="100%">
 
-**Sticky notes that stay where you stick them.**
+<br>
+
+**📌 A tiny desktop sticky-notes utility in Rust. Pin notes, images, GIFs and Markdown anywhere on your screen.**
 
 ![status: early stage](https://img.shields.io/badge/status-early%20stage-orange)
 ![language: Rust](https://img.shields.io/badge/language-Rust-b7410e)
@@ -10,7 +12,13 @@
 
 </div>
 
-> **Status:** Early stage: scaffold and docs only.
+<div align="center">
+
+[What is it](#️-what-is-tack) · [Features](#-features) · [Principles](#️-design-principles) · [Architecture](#️-planned-architecture) · [Roadmap](#️-roadmap)
+
+</div>
+
+> 🚧 **Status:** Early stage: scaffold and docs only.
 
 ## 🗒️ What is Tack?
 
@@ -33,11 +41,13 @@ Full list, including what is cut for now, in [docs/features.md](docs/features.md
 
 ## 🧭 Design principles
 
-- **Small and simple.**
-- **One database file.** Everything lives in a single SQLite file.
-- **No registry or system changes.**
-- **Unicode and RTL first.** Bangla and right-to-left text should work properly.
-- **Notes stay where I put them.**
+| | Principle | In practice |
+| --- | --- | --- |
+| 🪶 | **Small and simple** | A utility, not a suite |
+| 🗄️ | **One database file** | Everything lives in a single SQLite file |
+| 🧼 | **No registry or system changes** | Nothing written outside the app's own data |
+| 🌐 | **Unicode and RTL first** | Bangla and right-to-left text should work properly |
+| 📍 | **Notes stay where I put them** | Position and size survive restarts |
 
 ## 🏗️ Planned architecture
 
@@ -65,6 +75,7 @@ tack/
     fonts/    Fonts
     icons/    Icons
     stickers/ Stickers
+    banner/   README banner
   docs/       Architecture, features, data model, decisions, notes, roadmap
   .gitignore
   README.md
@@ -87,12 +98,12 @@ tack/
 
 ## 🗺️ Roadmap
 
-- [ ] UI experiment: render Bangla and RTL text in each candidate toolkit
-- [ ] MVP notes
-- [ ] Persistence
-- [ ] Custom windows
-- [ ] Snapping
-- [ ] Reminders
+- [ ] 🧪 UI experiment: render Bangla and RTL text in each candidate toolkit
+- [ ] 📝 MVP notes
+- [ ] 💾 Persistence
+- [ ] 🖼️ Custom windows
+- [ ] 🧲 Snapping
+- [ ] ⏰ Reminders
 
 ## 🖼️ Screenshots
 
